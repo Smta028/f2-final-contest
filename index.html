@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <h1>Student Management CRUD</h1>
+            <form action="" id="form">
+                <div class="box">
+                    <div>
+                        <input type="text" placeholder="Name" id="inputname">
+                        <div class="errMssg"></div>
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Email" id="inputemail">
+                        <div class="errMssg"></div>
+                    </div>
+                    <div>
+                        <input type="number" placeholder="GPA" id="inputgpa">
+                        <div class="errMssg"></div>
+                    </div>
+                    <div>
+                        <input type="number" placeholder="Age" id="inputage">
+                        <div class="errMssg"></div>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Degree" id="inputdegree">
+                        <div class="errMssg"></div>
+                    </div>
+                </div>
+                <button id="btn" type="submit">AddStudent</button>
+            </form>
+        </div>
+        <div class="search">
+            <input type="text"  onKeyup="search()" id="inputsearch" placeholder="Search By Name,email or degree">
+        </div>
+        <table id="table">
+            <thead>
+                <th>ID</th>
+                <th>Student Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>GPA</th>
+                <th>Degree</th>
+            </thead>
+            <tbody id="tablebody">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <!-- <div class="Materials">
+                            <span>BCA</span>
+                            <span class="icons">
+                                <span class="material-symbols-outlined">
+                                    edit_document
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    delete
+                                </span>
+                            </span>
+                        </div> -->
+                    </td>
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
